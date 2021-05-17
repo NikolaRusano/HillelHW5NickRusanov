@@ -18,8 +18,9 @@ public class Task3 {
         double abroadCallsZone2 = scanner.nextDouble();
 
         System.out.println("The total price is: ");
-        double total = basicInternetPrice+ CountPriceGBQuantity(usedGB)+ CountPricePhoneAroundUkraine(minutesPhoneTalkUKR) +
-                CountPriceSMSmessage(quantitySentSms) + CounrPriceCallsAbroadZone1(abroadCallsZone1) + CounrPriceCallsAbroadZone2(abroadCallsZone2);
+        double total = (basicInternetPrice+ CountPriceGBQuantity(usedGB)+ CountPricePhoneAroundUkraine(minutesPhoneTalkUKR) +
+                CountPriceSMSmessage(quantitySentSms) + CounrPriceCallsAbroadZone1(abroadCallsZone1) + CounrPriceCallsAbroadZone2(abroadCallsZone2));
+        total = total - (total *0.07);
         System.out.println(total);
     }
 
